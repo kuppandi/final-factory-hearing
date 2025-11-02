@@ -1,0 +1,20 @@
+vercel_json = '''{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "app.py"
+    }
+  ]
+}'''
+
+with open('vercel.json', 'w') as f:
+    f.write(vercel_json)
+
+print("✅ Created vercel.json")

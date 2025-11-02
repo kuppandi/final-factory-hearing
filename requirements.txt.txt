@@ -1,0 +1,16 @@
+requirements = '''numpy==1.24.3
+scipy==1.11.3
+sounddevice==0.4.6
+noisereduce==3.0.0
+tensorflow==2.15.0
+tensorflow-hub==0.15.0
+dash==2.14.2
+dash-bootstrap-components==1.5.0
+plotly==5.18.0
+gunicorn==21.2.0
+'''
+
+with open('requirements.txt', 'w') as f:
+    f.write(requirements)
+
+print("✅ Created requirements.txt")
